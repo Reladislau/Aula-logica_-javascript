@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparando Números</title>
+</head>
+<body>
+    <h3>Comparando Números com JavaScript</h3>
+
+    <script>
+        let numero1 = parseFloat(prompt("Digite o Primeiro Valor"))
+        let numero2 = parseFloat(prompt("Digite o Segundo Valor"))
+        let numero3 = parseFloat(prompt("Digite o Terceiro Valor"))
+
+        document.write("O valores informados foram:<br>")
+        document.write("Primeiro Valor: ",numero1, "<br>")
+        document.write("Segundo Valor: ", numero2, "<br>")
+        document.write("Terceiro Valor: ", numero3, "<br><br>")
+
+        if(numero1>numero2 && numero1>numero3){
+            document.write("O Maior valor é: ", numero1)
+        } else if(numero2>numero1 && numero2>numero3){
+            document.write("O Maior valor é: ", numero2)
+        } else {
+            document.write("O Maior Valor é: ", numero3)
+        }
+
+    </script>
+
+</body>
+</html>

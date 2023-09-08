@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média</title>
+</head>
+<body>
+    <h3>Média</h3>
+
+    <Script>
+        let nota1 = parseFloat(prompt("Digite a 1º Nota"))
+        let nota2 = parseFloat(prompt("Digite a 2º Nota"))
+        let nota3 = parseFloat(prompt("Digite a 3º Nota"))
+        let nota4 = parseFloat(prompt("Digite a 4º Nota"))
+        let soma = 0
+       
+
+        if (nota1>0 && nota1<10) {
+            soma = soma + nota1
+        }
+
+        if (nota2>0 && nota2<10) {
+            soma = soma + nota2
+        }
+        if (nota3>0 && nota3<10) {
+            soma = soma + nota3
+        }
+        if (nota4>0 && nota4<10) {
+            soma = soma + nota4
+        }
+
+        let media = soma/4
+
+        document.write("A média é ", media, "<br>")
+
+        if(media>5){
+            document.write("Você passou no teste!")
+        }else{
+            document.write("Tente novamente!")
+        }
+
+
+    </Script>
+
+
+</body>
+</html>
